@@ -1,0 +1,508 @@
+@font-face {
+    font-family: MonteCarlo;
+    src: url("montecarlo-regular.woff2");
+  }
+  
+  @font-feature-values "MonteCarlo" {
+    @swash {
+      fancy: 1;
+    }
+  }
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 120px;
+    /* width: 100%; */
+}
+i{
+    font-size: 25px;
+}
+.navbar-logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 6px;
+    column-gap: 35px;
+    /* margin-right: 40px; */
+}
+
+.navbar-links a {
+    color: #e4652b;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+@media (max-width: 490px) {
+    .navbar-links i {
+        font-size: 18px;
+    }
+    .navbar-links span {
+        font-size: 10px;
+    }
+}
+
+span{
+    margin: 0 -4px;
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar-search {
+        margin-bottom: 10px;
+    }
+}
+
+/* Basic styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+    border: 2px solid #f7770d;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Style for the input element */
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Style for the search button with the icon */
+.search-container button {
+    background-color: #ffffff;
+    border: none;
+    color: #ff6a0e;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Style for the search icon inside the button */
+.search-container button i {
+    font-size: 18px;
+}
+
+/* First navbar ends here */
+
+
+/* Style for the navbar2 */
+.navbar1 {
+    background-color: #f7770d;
+    /* overflow: hidden; */
+}
+@media (max-width:480px){
+    .navbar1{
+        /* margin-right: 8px; */
+
+    }
+    .hoverable{
+        font-size: 11px;
+    }
+
+}
+
+
+.nav-links1 {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-links1 li {
+    position: relative;
+    margin-right: 20px;
+    /* background-color: red; */
+}
+
+.nav-links1 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links1 li:hover a {
+    color: #ffffff; /* Change color on hover */
+    
+    
+}
+
+/* Sub-menu styles */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+}
+
+.nav-links1 li:hover .sub-menu {
+    display: block;
+}
+
+/* Style for hoverable menu items */
+.hoverable {
+    position: relative;
+}
+
+.hoverable:hover .sub-menu {
+    display: block;
+}
+
+/* Style for sub-menu items */
+.sub-menu li {
+    margin: 8px 0;
+}
+
+.sub-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sub-menu li a:hover {
+    color: #ff6b6b; /* Change color on hover */
+}
+
+
+/* first container css */
+.container {
+    /* position: absolute; */
+    width: 95%;
+    height: 20rem; /* Adjust this to control the height of the div */
+    background-image: url('https://img.freepik.com/free-vector/yellow-background-with-halftone-lines-design_1017-30148.jpg?w=2000'); /* Replace 'your-image.jpg' with the path to your background image */
+    background-size:auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    /* max-width: 1222px; */
+    padding: 11px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+.container {
+        width: 90%;
+        /* display: block; */
+}
+}
+
+.container h1,h3{
+    color:red;
+    text-align: center;
+}
+.shop-button {
+    background-color: #da0909; /* Change this to your desired button background color */
+    color: #fff; /* Change this to your desired button text color */
+    padding: 15px 30px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+    background-color: #0056b3; /* Change this to the hover background color */
+}
+
+/* second conatiner with 5 images */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin: 18px;
+    /* grid-template-columns: repeat(4, 1fr);
+    gap: 20px; */
+    /* Align images vertically in the middle */
+    /* margin: 10px 22px 10px 20px; */
+}
+
+.image {
+    width: calc(25% - 10px);
+    max-width: 100%; /* Each image takes up 20% of the container width */
+/* Adjust the maximum width of each image as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* margin-bottom: 20px; */
+    width:auto;
+}
+
+
+.best-seller-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Change the background color as needed */
+    padding: 10px 10px;
+    position: relative;
+    flex-direction: column;
+}
+
+.best-seller-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.view-all-button {
+    background-color: #ff5733; /* Red button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underlines from the button */
+    position: absolute;
+    right: 0;
+    margin-right: 42px;
+}
+@media (max-width: 490px) {
+    .best-seller-container a {
+        margin-right: -25px;
+    }
+}
+@media (max-width: 490px) {
+    .view-all-button {
+        position: relative;
+        margin-right: -8px;
+    }
+}
+
+/* 8 products container css */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Adjust the gap between items */
+    margin:10px 20px 5px 20px;
+    padding:20px;
+    
+}
+
+.product-item {
+    width: calc(20% - 20px); 
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px ;
+    position: relative;
+}
+@media (max-width: 490px) {
+    .product-item {
+        width: calc(39% - 20px); 
+    }
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+@media (max-width: 490px) {
+    .new{
+        flex-direction: column;
+    }
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.discount-label {
+    background-color: #50ee30;
+    color: #fff;
+    padding: 3px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 41px;
+    font-size: 12px;
+    border-radius: 14px;
+    right: 4;
+}
+
+.add-to-cart-button {
+    background-color: #d7dddb;;
+    color: #080808;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: -webkit-fill-available;
+}
+.add-to-cart-button i{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.star-ratings {
+    margin-top: 10px;
+    color: #ffcc00; /* Change the star color as needed */
+}
+
+/* hurry up container */
+.ncontainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    height: 260px;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e4652b;
+}
+
+
+
+.variant{
+    font-family: "MonteCarlo";
+    font-size: 3rem;
+    margin: 0.7rem 3rem;
+}
+
+/* new container again */
+
+.fourcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .fourcontainer {
+        margin: 30px;
+    }
+}
+.item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+}
+
+.icon {
+    font-size: 36px; /* Adjust the icon size */
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #555; /* Text color */
+}
+.smalltext{
+    font-size:10px;
+}
+
+/* sliding pictures css */
+.image-container {
+    /* width: 300px; */
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 25px;
+    border-radius: 30px;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.images.active {
+    opacity: 1;
+}
+
+/* testimonial css */
+.cus{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+    color: #e4652b;
+    flex-wrap: wrap;
+}
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
